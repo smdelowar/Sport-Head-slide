@@ -1,0 +1,30 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.element-container {
+   background: teal;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.content-elements {
+   text-align: center;
+}
+.content-element {
+   position: absolute;
+   text-align: center;
+   transform: translate(-50%, -50%) scale(0);
+   transition: 0.6s;
+}
+.content-element h1,
+i {
+   font-size: 10rem;
+   color: rgba(208, 186, 157, 0.777);
+}
+.content-element.current {
+   transform: translate(-50%, -50%) scale(1);
+}
